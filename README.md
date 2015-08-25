@@ -1,2 +1,3 @@
 # tnj-web-api
-The Web API for the tnj-runners mean-r solution
+
+a [Sails](http://sailsjs.org) application
