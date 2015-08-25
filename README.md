@@ -1,4 +1,4 @@
 client API
 --------------
 
-This API is for socialnewsdesk's  snd.
+This API is for TNJ.
