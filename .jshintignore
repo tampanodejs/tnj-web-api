@@ -1,0 +1,6 @@
+**/node_modules/**
+**/*.spec.js
+**/*.min.js
+**/bower_components/**
+**/client/public/vendor/**
+**/client/public/js/**

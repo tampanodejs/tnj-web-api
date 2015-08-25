@@ -1,3 +1,4 @@
-# tnj-web-api
+client API
+--------------
 
-a [Sails](http://sailsjs.org) application
+This API is for socialnewsdesk's  snd.
