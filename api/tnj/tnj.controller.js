@@ -27,9 +27,9 @@ function formatRequest(params) {
 }
 
 function get(req, res) {
-  var metaData = req.query.snd_meta_data;
+  var metaData = req.query.tnj_meta_data;
   var params = formatRequest(req.params);
-  delete req.query.snd_meta_data;
+  delete req.query.tnj_meta_data;
   var data = {
     payload: {
       query_params: req.query,
@@ -56,7 +56,7 @@ function get(req, res) {
 
 // POST request to Main
 function post(req, res) {
-  var metaData = req.body.snd_meta_data;
+  var metaData = req.body.tnj_meta_data;
   var dataParams = req.body.data;
 
   if (typeof dataParams === 'string') {
@@ -66,7 +66,7 @@ function post(req, res) {
       return res.status(500).json({error: 'Invalid data element'});
     }
   }
-  delete req.body.snd_meta_data;
+  delete req.body.tnj_meta_data;
   var params = formatRequest(req.params);
   var data = {
     payload: {
@@ -94,7 +94,7 @@ function post(req, res) {
 
 // PUT request to Main
 function put(req, res) {
-  var metaData = req.body.snd_meta_data;
+  var metaData = req.body.tnj_meta_data;
   var dataParams = req.body.data;
 
   if (typeof dataParams === 'string') {
@@ -104,7 +104,7 @@ function put(req, res) {
       return res.status(500).json({error: 'Invalid data element'});
     }
   }
-  delete req.body.snd_meta_data;
+  delete req.body.tnj_meta_data;
   var params = formatRequest(req.params);
   var data = {
     payload: {
