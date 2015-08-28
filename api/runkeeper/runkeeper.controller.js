@@ -48,8 +48,6 @@ function get(req, res) {
   }).then(function(final) {
     logger.debug(JSON.stringify(final.body));
     final.ack();
-    res.setHeader('x-transaction-id', final.body.transaction_id);
-    res.setHeader('x-client-request-id', final.body.client_request_id);
     return res.status(200).json(final.body.payload);
   });
 }
